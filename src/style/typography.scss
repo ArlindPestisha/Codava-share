@@ -1,0 +1,58 @@
+@import "../style/mediaqueries.scss";
+@import "../style/mixins.scss";
+@import "../style/global.scss";
+//roboto
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+// muli font
+@import url("https://use.typekit.net/cej0aue.css");
+//open sans
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+
+//popins
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+//Livvic
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+
+// fonts
+$main-font: "Livvic", sans-serif; //might change back to Muli
+$secondary-font: "Open Sans", sans-serif;
+$nav-font: "Poppins", sans-serif;
+
+// This typography it follows the Material Design patternes
+// Link to Material Design: https://material.io/design/typography/the-type-system.html#type-scale
+
+h1 {
+  @include typography(96px, 700, -1.5, $main-font);
+}
+h2 {
+  @include typography(64px, 500, -0.5, $main-font);
+}
+h3 {
+  @include typography(48px, 400, 0, $main-font);
+}
+
+h4 {
+  @include typography(32px, 600, 0.25, $main-font);
+}
+h5 {
+  @include typography(24px, 400, 0, $main-font);
+}
+
+// We can use like a subtitle: Subtitles are smaller than headlines. They are typically reserved for medium-emphasis text that is shorter in length. Serif or sans serif typefaces work well for subtitles
+h6 {
+  @include typography(24px, 400, 0, $main-font)
+    // When we use for subtitle the font-size is between 14px - 16px
+;
+}
+p {
+  @include typography(20px, 200, 0.5, $main-font)
+    // this depends from us can go from 14px - 24 px
+;
+}
+// For buttons we use p {
+//font-size: 16px;
+//line-height: 0.5;
+//font-weight: 500;
+//text-transform: uppercase;
+//}

@@ -1,0 +1,50 @@
+@import "../../style/import.scss";
+
+.container {
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  background-color: #000000;
+  position: relative;
+  color: #fff;
+
+  .right,
+  .left {
+    height: 100%;
+    width: 50%;
+    max-height: 100%;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    bottom: 1rem;
+    margin-right: 2rem;
+    svg {
+      margin-right: 1rem;
+    }
+  }
+
+  h4,
+  span {
+    font-family: $main-font;
+    margin-bottom: 1rem;
+  }
+  h4 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  span {
+    font-weight: 200;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+}

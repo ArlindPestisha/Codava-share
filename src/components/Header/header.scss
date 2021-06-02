@@ -1,0 +1,26 @@
+@import "../../style/import.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  position: relative;
+  max-width: 100vw;
+  font-family: $main-font;
+  padding: 1rem 0rem 1rem 1rem;
+  align-items: center;
+  border-bottom: 2px solid $light-gray;
+  .logo {
+    display: block;
+
+    @include tablet {
+      img {
+        width: calc(100% - 50%);
+        height: calc(100% - 50%);
+      }
+    }
+  }
+  @include standard {
+    align-items: center;
+  }
+}

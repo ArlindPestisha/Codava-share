@@ -1,0 +1,44 @@
+@import '../../style/import.scss';
+
+.case {
+    height: 85%;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $main-font;
+    @include tablet {
+        width: 80%;
+        margin-top: 2rem;
+    }
+    @include xl-phone {
+        width: 100%;
+    }
+    .case-img {
+        height: 200px;
+        width: 100%;
+        background-color: #000;
+        @include center;
+        div {
+            background-color: #fff;
+            height: 20%;
+            width: 20%;
+            border-radius: 0.3rem;
+        }
+    }
+    .text-wrapper {
+        background-color: #fff;
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h2,
+        a {
+            font-family: $main-font;
+            font-weight: 200;
+            padding: 0.6rem;
+        }
+    }
+}

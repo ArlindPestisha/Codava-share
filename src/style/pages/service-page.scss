@@ -1,0 +1,24 @@
+@import "../import.scss";
+
+.service-page {
+  background: $light-gray;
+  @include center;
+  .service-container {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 4rem;
+    font-family: $main-font;
+    @include tablet {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 10rem;
+    }
+    @include sm-phone {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 6rem;
+    }
+  }
+}

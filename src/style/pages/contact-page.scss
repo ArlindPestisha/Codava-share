@@ -1,0 +1,26 @@
+@import "../import.scss";
+
+.contact-page {
+  @include center;
+  text-align: center;
+  flex-flow: column;
+  height: 100vh;
+  background: FFFFFF;
+  // background: #00ccff;
+  font-family: $main-font;
+
+  a {
+    font-size: 2em;
+    font-weight: 800;
+    text-decoration: none;
+    color: $dark-blue;
+    opacity: 0.8;
+
+    &:hover {
+      color: $dark-blue;
+      opacity: 1;
+      text-decoration: underline;
+      transition: 0.2s;
+    }
+  }
+}

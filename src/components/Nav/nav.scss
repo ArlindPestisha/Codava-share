@@ -1,0 +1,24 @@
+@import "../../style/import.scss";
+
+.container-link {
+  margin-right: 2rem;
+  display: inline-block;
+  justify-content: flex-end;
+  a:nth-child(n) {
+    text-decoration: none;
+    font-family: $nav-font;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0 2rem 0 0;
+    color: $dark-gray;
+  }
+  a:hover {
+    transition: all 0.2s ease-in-out;
+    border-bottom: 1px solid $dark-gray;
+    padding-bottom: 0.2rem;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}

@@ -1,0 +1,61 @@
+@import "../../style/import.scss";
+
+.service-card {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  padding-left: $padding-six;
+  padding-right: $padding-six;
+
+  &:last-child {
+    margin-bottom: 6rem;
+  }
+  .card-img {
+    margin-left: $padding-four;
+    svg {
+      max-height: 400px;
+      max-width: 400px;
+      @include tablet {
+        margin: 0;
+        max-height: 200px;
+        max-width: 200px;
+      }
+    }
+    @include tablet {
+      order: 1;
+    }
+  }
+  .card-text {
+    margin-left: 100px;
+    max-width: 50%;
+    .service-title {
+      color: $medium-gray;
+      margin-bottom: $padding-two;
+    }
+    @include tablet {
+      max-width: 90%;
+      margin: 0;
+      order: 2;
+      .service-title {
+        h4 {
+          @include typography(32px, 400, 0.25, $main-font);
+        }
+      }
+    }
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: $padding-four;
+    padding-right: $padding-four;
+  }
+  &.flipped {
+    flex-direction: row-reverse;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+}

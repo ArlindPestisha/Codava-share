@@ -1,0 +1,39 @@
+// Background image center
+@mixin standard-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// Flex center
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin left {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+@mixin right {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}
+
+//Typography
+@mixin typography($size, $weight, $letterSpacing, $fontFamily) {
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: $letterSpacing;
+  font-family: $fontFamily;
+  //line-height: $lineHeight;
+}

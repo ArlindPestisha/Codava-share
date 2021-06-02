@@ -1,0 +1,56 @@
+@import "../../style/import.scss";
+
+.about {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: $padding-six;
+  padding-right: $padding-six;
+  .text-box {
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    //@include typography(20px, 300, 1.5, $main-font);
+    width: fit-content;
+    max-width: 50%;
+
+    .content {
+      line-height: 1.75em;
+      margin-top: 1rem;
+    }
+    @include tablet {
+      max-width: 90%;
+      order: 2;
+    }
+  }
+
+  .icon {
+    margin-top: 4rem;
+    svg {
+      max-height: 400px;
+      max-width: 400px;
+      @include tablet {
+        margin: 0;
+        max-height: 200px;
+        max-width: 200px;
+        order: 1;
+      }
+    }
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+    //flex-flow: row wrap;
+    //padding-left: $padding-four;
+    //padding-right: $padding-four;
+  }
+  &.flipped {
+    flex-direction: row-reverse;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+}

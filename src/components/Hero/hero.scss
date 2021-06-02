@@ -1,0 +1,87 @@
+@import "../../style/import.scss";
+.hero {
+  display: flex;
+  align-items: center;
+  opacity: 2;
+  justify-content: center;
+  /*  background-color: $dark-blue; */
+  min-height: 100vh;
+  font-family: $main-font;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    min-height: initial;
+  }
+}
+.fullHero {
+  height: 100vh;
+  @extend .hero;
+}
+
+.hero-inner {
+  width: 50%;
+  color: $dark-gray;
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    @include xl-phone {
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+  p {
+    opacity: 0.85;
+    font-size: 32px;
+    font-weight: 300;
+    @include xl-phone {
+      font-size: 18px;
+    }
+  }
+  .brand {
+    margin-top: $padding-three;
+    font-weight: 700;
+  }
+  .hero-button {
+    background: $dark-gray;
+    color: $light-gray;
+    border: 0;
+    padding: 1rem 2rem;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: ease-in-out 0.6s;
+    cursor: pointer;
+    &:hover {
+      transition: ease-in-out 0.6s;
+      background: #444;
+      color: #fff;
+    }
+  }
+  @include tablet {
+    padding: $padding-two;
+  }
+  @include standard {
+    padding: $padding-two;
+  }
+  @media (max-width: 700px) {
+    order: 2;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.hero-img {
+  flex-basis: 30%; //remove this or?
+  svg {
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+  }
+  @media (max-width: 700px) {
+    order: 1;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80vw;
+    img {
+      width: 100%;
+    }
+  }
+}
