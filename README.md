@@ -9,8 +9,7 @@
 
     1. Clone repo from your fork
     2. npm install
-    3. npm run develop || gatsby develop
-    4. Change tokens to your contentul space tokens
+    3. npm run start
 
 3. **Learn more**
 
