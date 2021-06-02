@@ -1,17 +1,10 @@
-1. **Starter for Codava contentful setup**
-
-    - This is as minimal as possible with a basic graphql setup and one example component.
-    - If you want to add components just add a components folder and have at it
-    - If you wish to put this into production, remember to create a .env enviroment to store tokens in and put them there.
-    - I think I managed to put sass support in here. If not we'll sort it out.
-
-2. **How to**
+1. **How to**
 
     1. Clone repo from your fork
     2. npm install
     3. npm run start
 
-3. **Learn more**
+2. **Learn more**
 
     - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
